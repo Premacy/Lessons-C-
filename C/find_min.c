@@ -25,7 +25,7 @@ void fillArray(int *arr, const int N)
 {
     int num;
     for (int i = 0; i < N; i++) {
-        scanf("%d", num);
+        scanf("%d", &num);
         arr[i] = num;
     }
 }
@@ -35,7 +35,6 @@ int main()
     int n = 0; // int n;
     scanf("%d", &n);
     int* arr = (int*) malloc(n * sizeof(int)); // просим память на куче для нашего массива
-    printf("%d", n);
 
     fillArray(arr, n); // заполняем массив
     int minElement = findMin(arr, n); // поиск минимального элемента
